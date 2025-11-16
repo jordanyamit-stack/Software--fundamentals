@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="RETO_3"/>
+        <attribute name="authors" value="rtx3050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 07:12:03 p.&#8239;m."/>
+        <attribute name="created" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0xNTswMzozNToxNyBwLuKAr20uOzExMjU5"/>
+        <attribute name="edited" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0xNTswNzoxMjowMyBwLuKAr20uOzM7MTEzNjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NUMERO" type="Integer" array="False" size=""/>
+            <output expression="&quot;VALOR DEL NUMERO&quot;" newline="True"/>
+            <comment text="DIGITAR NUMERO&#13;&#10;"/>
+            <input variable="NUMERO"/>
+            <comment text="PROCESO&#13;&#10;"/>
+            <if expression="NUMERO%2=0">
+                <then>
+                    <comment text="POSITIVO"/>
+                    <if expression="NUMERO&gt;0">
+                        <then>
+                            <output expression="&quot;PAR POSITIVO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;IMPAR POSITIVO&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <comment text="NEGATIVO"/>
+                    <if expression="NUMERO&lt;0">
+                        <then>
+                            <output expression="&quot;PAR NEGATIVO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;IMPAR NEGATIVO&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
