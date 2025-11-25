@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="dados1"/>
+        <attribute name="authors" value="rtx3050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-23 06:28:17 a.&#8239;m."/>
+        <attribute name="created" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0yMzswNjoxNzozOSBhLuKAr20uOzExMjUw"/>
+        <attribute name="edited" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0yMzswNjoyODoxNyBhLuKAr20uOzE7MTEzNTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dado1" type="Integer" array="False" size=""/>
+            <declare name="boton" type="String" array="False" size=""/>
+            <output expression="&quot;OPRIMIR TECLAO PARA LANZAR&quot;" newline="True"/>
+            <input variable="boton"/>
+            <assign variable="dado" expression="dado=random(1,6)"/>
+            <output expression="&quot;el numero del dado es :&quot; &amp; dado1" newline="True"/>
+            <if expression="dado MOD 2=0">
+                <then>
+                    <output expression="&quot;es par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;no es par&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
