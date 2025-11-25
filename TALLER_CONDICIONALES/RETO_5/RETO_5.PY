@@ -1,41 +1,37 @@
-def reto_condicional_5():
+tipoId = input("Ingrese el tipo de identificación: ")
+nombres = input("Ingrese nombres: ")
+apellidos = input("Ingrese apellidos: ")
+genero = input("Ingrese género (M/F): ")
+anoNacimiento = input("Ingrese año de nacimiento: ")
+direccion = input("Ingrese dirección: ")
+telefono = input("Ingrese teléfono: ")
+salario = float(input("Ingrese salario: "))
 
-    # Solicitud de datos
-    try:
-        genero = input("Ingrese su género (M: Mujer, H: Hombre): ").upper()
-        salario_actual = float(input("Ingrese su salario actual (en COP): "))
-    except ValueError:
-        print("Error: Ingrese un valor numérico para el salario.")
-        return
+if salario <= 1200000:
+    if genero == 'F':
+        aumento = salario * 0.10
+    else:
+        aumento = salario * 0.08
+else:
+    if salario < 2000000:
+        aumento = salario * 0.05
+    else:
+        if genero == 'F':
+            aumento = salario * 0.03
+        else:
+            aumento = salario * 0.025
 
-    aumento_porcentaje = 0.0
+salarioFinal = salario + aumento
 
-    # calculo del incremento salarial
-    
- 
-    if salario_actual <= 1200000: 
-        if genero == 'M':
-            aumento_porcentaje = 0.10
-        elif genero == 'H':
-            aumento_porcentaje = 0.08
-        
-    elif 1200000 < salario_actual < 2000000: 
-        aumento_porcentaje = 0.05
+print("Tipo de identificación:", tipoId)
+print("Nombres:", nombres)
+print("Apellidos:", apellidos)
+print("Género:", genero)
+print("Año de nacimiento:", anoNacimiento)
+print("Dirección:", direccion)
+print("Teléfono:", telefono)
 
-    #
-    elif salario_actual >= 2000000:
-        if genero == 'M':
-            aumento_porcentaje = 0.03 
-        elif genero == 'H':
-            aumento_porcentaje = 0.025 
-    
-    # calculo del salario final
-    salario_final = salario_actual * (1 + aumento_porcentaje)
-# resultado
-    print("---")
-    print(f"Salario Actual: {salario_actual:,.2f} COP")
-    print(f"Porcentaje de Aumento Aplicado: {aumento_porcentaje * 100:.1f} %")
-    print(f"Salario Final: {salario_final:,.2f} COP")
-
-if __name__ == "__main__":
-    reto_condicional_5()
+print("----- SALARIO -----")
+print("Salario inicial:", salario)
+print("Aumento aplicado:", aumento)
+print("Salario final:", salarioFinal)

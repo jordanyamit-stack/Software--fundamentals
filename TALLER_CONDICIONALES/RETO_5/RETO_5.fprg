@@ -4,9 +4,9 @@
         <attribute name="name" value="RETO_5"/>
         <attribute name="authors" value="rtx3050"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-11-15 08:13:09 p.&#8239;m."/>
+        <attribute name="saved" value="2025-11-23 09:11:49 p.&#8239;m."/>
         <attribute name="created" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0xNTswNzozNDo1NiBwLuKAr20uOzExMjY1"/>
-        <attribute name="edited" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0xNTswODoxMzowOSBwLuKAr20uOzE7MTEzNjk="/>
+        <attribute name="edited" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0yMzswOToxMTo0OSBwLuKAr20uOzI7MTEzNzI="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -59,7 +59,7 @@
                                     <assign variable="salariofinal" expression="salario*0.03"/>
                                 </then>
                                 <else>
-                                    <assign variable="salario" expression="salario*0.25"/>
+                                    <assign variable="salarioFINAL" expression="salario*0.25"/>
                                 </else>
                             </if>
                         </else>
