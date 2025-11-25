@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="dados2"/>
+        <attribute name="authors" value="rtx3050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-23 06:39:38 a.&#8239;m."/>
+        <attribute name="created" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0yMzswNjoyODoyMiBhLuKAr20uOzExMjQ0"/>
+        <attribute name="edited" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0yMzswNjozOTozOCBhLuKAr20uOzE7MTEzNjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroveces" type="Integer" array="False" size=""/>
+            <declare name="variable" type="Integer" array="False" size=""/>
+            <declare name="dado" type="Integer" array="False" size=""/>
+            <declare name="suma" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;cuantas veeces desea lanzar el dado?&quot;" newline="True"/>
+            <input variable="numeroveces"/>
+            <for variable="variable" start="1" end="numeroveces" direction="inc" step="1">
+                <assign variable="dado" expression="dado=ramdon(1,6)"/>
+                <assign variable="suma" expression="suma=suma+dado"/>
+            </for>
+            <output expression="&quot;la suma total de los valores generados es:&quot; &amp; suma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
