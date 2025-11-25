@@ -4,9 +4,9 @@
         <attribute name="name" value="RETO_1"/>
         <attribute name="authors" value="rtx3050"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-11-15 10:55:19 p.&#8239;m."/>
+        <attribute name="saved" value="2025-11-23 08:56:01 p.&#8239;m."/>
         <attribute name="created" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0xNTsxMDoyOToyMSBwLuKAr20uOzExMjU1"/>
-        <attribute name="edited" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0xNTsxMDo1NToxOSBwLuKAr20uOzE7MTEzNjk="/>
+        <attribute name="edited" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0yMzswODo1NjowMSBwLuKAr20uOzI7MTEzNjg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,24 +14,24 @@
             <comment text="DEFINIR DADOS"/>
             <declare name="DADO1" type="Integer" array="False" size=""/>
             <declare name="DADO2" type="Integer" array="False" size=""/>
-            <assign variable="DADO1" expression="DADO1=random(1,6)"/>
-            <assign variable="DADO2" expression="DADO2=random(1,6)"/>
-            <output expression="&quot;numero del dado&quot;&amp; DADO1" newline="True"/>
-            <output expression="&quot;numero del dado&quot; &amp; DADO2" newline="True"/>
+            <assign variable="DADO1" expression="random(6)+1"/>
+            <assign variable="DADO2" expression="random(6)+1"/>
+            <output expression="&quot;numero del dado &quot;&amp; DADO1" newline="True"/>
+            <output expression="&quot;numero del dado &quot; &amp; DADO2" newline="True"/>
             <if expression="DADO1%2=0">
                 <then>
-                    <output expression="DADO1 &amp; &quot;ES UN NUMERO PAR DEL DADO 1&quot;" newline="True"/>
+                    <output expression="DADO1 &amp; &quot;  ES UN NUMERO PAR DEL DADO 1&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="DADO1 &amp; &quot;ES UN NUMERO IMPAR DEL DADO 1&quot;" newline="True"/>
+                    <output expression="DADO1 &amp; &quot; ES UN NUMERO IMPAR DEL DADO 1&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="DADO2%2=0">
                 <then>
-                    <output expression="DADO2 &amp; &quot;ES UN NUMERO PAR DEL DADO 2&quot;" newline="True"/>
+                    <output expression="DADO2 &amp; &quot; ES UN NUMERO PAR DEL DADO 2&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="DADO2 &amp; &quot;ES UN NUMERO IMPAR DEL DADO 2&quot;" newline="True"/>
+                    <output expression="DADO2 &amp; &quot; ES UN NUMERO IMPAR DEL DADO 2&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="DADO1=DADO2">
