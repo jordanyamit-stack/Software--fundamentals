@@ -4,14 +4,15 @@
         <attribute name="name" value="RETO_2"/>
         <attribute name="authors" value="rtx3050"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-11-15 11:04:33 p.&#8239;m."/>
+        <attribute name="saved" value="2025-11-24 07:13:40 p.&#8239;m."/>
         <attribute name="created" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0xNTsxMTowMDo0OCBwLuKAr20uOzExMjU0"/>
-        <attribute name="edited" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0xNTsxMTowNDozMyBwLuKAr20uOzE7MTEzNjA="/>
+        <attribute name="edited" value="cnR4MzA1MDtMQVBUT1AtQlNBVTgxNEU7MjAyNS0xMS0yNDswNzoxMzo0MCBwLuKAr20uOzI7MTEzNjQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="numero" type="Integer" array="False" size=""/>
+            <declare name="numero" type="Real" array="False" size=""/>
+            <assign variable="numero" expression="0"/>
             <output expression="&quot;ingrese el numero entero (positivo o negativo)&quot;" newline="True"/>
             <input variable="numero"/>
             <if expression="numero%2=0">
